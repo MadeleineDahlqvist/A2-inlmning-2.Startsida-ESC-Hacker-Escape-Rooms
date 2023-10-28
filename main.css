@@ -7,14 +7,16 @@ body {
   padding: 0;
   width: 100%;
 }
-
+.header__logoTitle {
+  display: flex;
+}
 .header {
   background-color: #011827;
   color: #ffffff;
   font-size: 20px;
   display: flex;
-  flex-direction: row;
-  height: 144px;
+  flex-direction: column;
+  width: 100;
   font-weight: bold;
 }
 .header__logoImg {
@@ -42,5 +44,36 @@ body {
   }
 }
 @media only screen and (min-width: 481px) {
-    html {background-color: red;
-}}
+  .header {
+    height: 190px;
+  }
+  .header__title {
+    font-size: 1.4em;
+    margin-top: 2.3em;
+    margin-left: 0.5em;
+  }
+  .header__logoImg {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  .header__navigationLinks {
+    background-color: #011827;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1em;
+    margin-top: 2.1em;
+  }
+  .navigationLinks__link {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .navigationLinks__contactUs {
+    text-decoration: none;
+    color: #8acfe5;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
