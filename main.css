@@ -52,11 +52,12 @@ body {
   .container__button {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    align-items: center;
   }
 
 .container__buttonOnSiteChallenge {
   background-color: #8acfe5;
+  color: #011827;
   border: none;
   padding: 0.7em;
   margin: 0.2em;
@@ -65,6 +66,9 @@ body {
   justify-content: center;
   border-radius: 0.2em;
   width: 12em;
+  margin-top: 1.5em;
+  margin-bottom: 1.2em;
+  
   
 }
 .container__buttonOnlineChallenge {
