@@ -1,0 +1,46 @@
+* {
+  font-family: "Roboto";
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.header {
+  background-color: #011827;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 144px;
+  font-weight: bold;
+}
+.header__logoImg {
+  width: 128px;
+  height: 82px;
+}
+.container__hackerImg {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 480px) {
+  .header__title {
+    font-size: 1em;
+    max-width: 70px;
+    margin-top: 1.3em;
+    margin-left: 0.5em;
+  }
+  .header__logoImg {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .header__navigationLinks {
+    display: none;
+  }
+}
+@media only screen and (min-width: 481px) {
+    html {background-color: red;
+}}
