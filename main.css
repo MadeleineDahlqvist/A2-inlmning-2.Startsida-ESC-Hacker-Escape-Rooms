@@ -16,7 +16,7 @@ body {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  width: 100;
+  width: 100%;
   font-weight: bold;
 }
 .header__logoImg {
@@ -63,13 +63,10 @@ body {
   margin: 0.2em;
   font-size: 1em;
   font-weight: bold;
-  justify-content: center;
   border-radius: 0.2em;
   width: 12em;
   margin-top: 1.5em;
   margin-bottom: 1.2em;
-  
-  
 }
 .container__buttonOnlineChallenge {
   border: none;
@@ -106,13 +103,41 @@ body {
     margin-left: 2em;
     margin-right: 2em;
   }
-  .navigationLinks__contactUs {
-    text-decoration: none;
-    color: #8acfe5;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
+  .navigationLinks__link:hover {
+    color: #8acfe5;}
+  
   .container__hackerImgMobile {
     display: none;
   }
+  .container__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container__buttonOnlineChallenge{
+    border: none;
+    background-color: #E3170A;
+    color:#FFFFFF;
+    margin: 0.2em;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 14em;
+    margin-top: -2em;
+    border-radius: 0.2em;
+
+  }
+  .container__buttonOnSiteChallenge {
+    border: none;
+    background-color: #8ACFE5;
+    color: #011827;
+    margin:0.2em;
+    font-size: 1.3em;
+    font-weight: bold;
+    width:14em;
+    margin-top: -2em;
+    border-radius: 0.2em;
+
+    
+  }
+  
 }
