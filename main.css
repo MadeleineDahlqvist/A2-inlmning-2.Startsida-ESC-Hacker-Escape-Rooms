@@ -23,9 +23,6 @@ body {
   width: 128px;
   height: 82px;
 }
-.container__hackerImg {
-  width: 100%;
-}
 @media only screen and (max-width: 480px) {
   .header {
     height: 6.4em;
@@ -43,19 +40,21 @@ body {
   .header__navigationLinks {
     display: none;
   }
-  .container__hackerImg {
+  .container__hackerImgWeb {
     display: none;
   }
-  .container__hackerImgMobile {
+  .container__hackerImg {
     width: 100%;
   }
-  .container__button {
+  .container__button,
+  .container__buttonTwo {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
 
-  .container__buttonOnSiteChallenge {
+  .container__buttonOnSiteChallenge,
+  .container__buttonOnSiteChallengeTwo {
     background-color: #8acfe5;
     color: #011827;
     border: none;
@@ -68,7 +67,8 @@ body {
     margin-top: 1.5em;
     margin-bottom: 1.2em;
   }
-  .container__buttonOnlineChallenge {
+  .container__buttonOnlineChallenge,
+  .container__buttonOnlineChallengeTwo {
     border: none;
     background: none;
     color: #36769d;
@@ -85,10 +85,10 @@ body {
   .container__quoteTextEnd {
     display: flex;
     flex-direction: column;
-    
+
     width: 17em;
   }
-  .container__quoteImg{
+  .container__quoteImg {
     height: 5em;
     margin-left: -4em;
   }
@@ -102,7 +102,20 @@ body {
   .container__quoteEnd {
     margin-top: 0;
     font-size: 0.8em;
-    
+  }
+  .container__quoteSecond {
+    display: none;
+  }
+  .container__challengesBoxOne,
+  .container__challengesBoxTwo,
+  .container__challengesBoxThree {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__challengesBoxOne__Img,
+  .container__challengesBoxTwo__Img,
+  .container__challengesBoxThree__Img {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 481px) {
@@ -135,37 +148,92 @@ body {
   .navigationLinks__link:hover {
     color: #8acfe5;
   }
-  .container__hackerImgMobile {
+  .container__hackerImg {
     display: none;
   }
-  .container__button {
+  .container__hackerImgWeb {
+    width:100%;
+  }
+  .container__button,
+  .container__buttonTwo {
     display: flex;
     flex-direction: row;
     gap: 1em;
     justify-content: center;
   }
-  .container__buttonOnlineChallenge {
+  .container__buttonOnlineChallenge,
+  .container__buttonOnlineChallengeTwo {
     border: none;
     background-color: #e3170a;
     border-radius: 0.2em;
     color: #ffffff;
-    padding:0.8em;
+    padding: 0.8em;
     font-size: 1.3em;
     font-weight: bold;
     transform: translateY(-55%);
     width: 12em;
-    
   }
-  .container__buttonOnSiteChallenge {
+  .container__buttonOnSiteChallenge,
+  .container__buttonOnSiteChallengeTwo {
     border: none;
     background-color: #8acfe5;
     border-radius: 0.2em;
     color: #011827;
-    padding:0.8em;
+    padding: 0.8em;
     font-size: 1.3em;
     font-weight: bold;
     transform: translateY(-55%);
     width: 12em;
-    
+  }
+  .container__quotes {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__quote {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    width: 100%;
+  }
+  .container__quoteTextEnd,
+  .container__quoteTextEnd {
+    display: flex;
+    flex-direction: column;
+    width: 17em;
+  }
+  .container__quoteImg {
+    height: 5em;
+    margin-left: -4em;
+  }
+  .container__quoteText,
+  .container__quoteTextSecond {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+  .container__quoteEnd,
+  .container__quoteEndSecond {
+    margin-top: 0;
+    font-size: 0.8em;
+  }
+  .container__quoteSecond {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    width: 100%;
+  }
+  .container__quoteTextSecond {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+  }
+  .container__quoteImgSecond {
+    height: 5em;
   }
 }
