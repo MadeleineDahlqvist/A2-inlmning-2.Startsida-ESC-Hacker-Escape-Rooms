@@ -23,6 +23,80 @@ body {
   width: 128px;
   height: 82px;
 }
+.content__button--red {
+  background-color: #e3170a;
+  border-radius: 0.2em;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+}
+.content__challenges{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__challengesBox{
+  display: flex;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.26);
+  overflow: hidden;
+  border-radius: 8px; 
+  width: 20em;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content__room {
+  padding: 1em;
+  padding-bottom: 0;
+}
+.content__roomTitle {
+  margin: 0;
+  font-weight: 100;
+}
+.content__challengesParticipants {
+  margin: 0;
+  margin-left: 0.8em;
+}
+.content__challengesBoxImg{
+  width: 100%;
+}
+.content__starsParticipants {
+  display: flex;
+  flex-direction: row;
+}
+.content__challengesText{
+  display: flex;
+  flex-direction: row;
+} 
+.content__challengesBook{
+  display: flex;
+  justify-content: flex-end;
+}
+.content__challengesBookButton {
+  padding: 1em;
+  width: 10em;
+  margin: 1em;
+  margin-top: 0;
+}
+.content__playImg{
+  width:100%;
+}
+.footer {
+  background-color: #011827;
+  color:#ffffff;
+}
+.footer__title{
+  margin-bottom: 0.5em;
+}
+.footer__text{
+  margin-block-start: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__link--space {
+  margin-bottom: 2em;
+}
 @media only screen and (max-width: 480px) {
   .header {
     height: 6.4em;
@@ -40,21 +114,20 @@ body {
   .header__navigationLinks {
     display: none;
   }
-  .container__hackerImgWeb {
+  .content__hackerImgWeb {
     display: none;
   }
-  .container__hackerImg {
+  .content__hackerImg {
     width: 100%;
   }
-  .container__button,
-  .container__buttonTwo {
+  .content__button,
+  .content__buttonTwo {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
-
-  .container__buttonOnSiteChallenge,
-  .container__buttonOnSiteChallengeTwo {
+  .content__buttonOnSiteChallenge,
+  .content__buttonOnSiteChallengeTwo {
     background-color: #8acfe5;
     color: #011827;
     border: none;
@@ -67,55 +140,97 @@ body {
     margin-top: 1.5em;
     margin-bottom: 1.2em;
   }
-  .container__buttonOnlineChallenge,
-  .container__buttonOnlineChallengeTwo {
-    border: none;
+  .content__buttonOnlineChallenge,
+  .content__buttonOnlineChallengeTwo {
     background: none;
     color: #36769d;
-    font-weight: bold;
     text-decoration: underline;
   }
-  .container__quote {
+  .content__quote {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-bottom:3em;
     width: 100%;
   }
-  .container__quoteTextEnd {
+  .content__quoteTextEnd {
     display: flex;
     flex-direction: column;
-
     width: 17em;
   }
-  .container__quoteImg {
-    height: 5em;
-    margin-left: -4em;
+  .content__quoteImg {
+    height: 4em;
+    margin-right: 1em;
   }
-  .container__quoteText {
+  .content__quoteText {
     font-style: italic;
-    font-weight: bold;
     font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 0.2em;
   }
-  .container__quoteEnd {
+  .content__quoteEnd {
     margin-top: 0;
     font-size: 0.8em;
   }
-  .container__quoteSecond {
+  .content__quoteSecond {
     display: none;
   }
-  .container__challengesBoxOne,
-  .container__challengesBoxTwo,
-  .container__challengesBoxThree {
-    display: flex;
-    flex-direction: row;
+  .content__challenges{
+    margin-bottom:1em;
   }
-  .container__challengesBoxOne__Img,
-  .container__challengesBoxTwo__Img,
-  .container__challengesBoxThree__Img {
-    width: 100%;
+  .content__story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #011827;
+    margin-top: 3em;
+    padding-bottom: 2em;
+    padding-top:3em;
+  }
+
+  .content__storyText {
+    color:#ffffff;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .content__storyButton {
+    background-color:#011827;
+    color:#8acfe5;
+    padding: 0.8em;
+    margin: 0.2em;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 0.2em;
+    border-color: #8acfe5;
+    width: 13em;
+    margin-top: 1.5em;
+    margin-bottom: 1.2em;
+  }
+  .content__playContainer{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .content__playText{
+    font-weight: 400;
+  }
+  .content__playButton{
+    padding: 0.7em;
+    margin: 0.2em;
+    font-size: 1em;
+    width: 12em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .footer{    
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-top: 2em;
+    padding-bottom: 4em;
   }
 }
 @media only screen and (min-width: 481px) {
@@ -148,33 +263,28 @@ body {
   .navigationLinks__link:hover {
     color: #8acfe5;
   }
-  .container__hackerImg {
+  .content__hackerImg {
     display: none;
   }
-  .container__hackerImgWeb {
+  .content__hackerImgWeb {
     width:100%;
   }
-  .container__button,
-  .container__buttonTwo {
+  .content__button,
+  .content__buttonTwo {
     display: flex;
     flex-direction: row;
     gap: 1em;
     justify-content: center;
   }
-  .container__buttonOnlineChallenge,
-  .container__buttonOnlineChallengeTwo {
-    border: none;
-    background-color: #e3170a;
-    border-radius: 0.2em;
-    color: #ffffff;
+  .content__buttonOnlineChallenge,
+  .content__buttonOnlineChallengeTwo {
     padding: 0.8em;
     font-size: 1.3em;
-    font-weight: bold;
     transform: translateY(-55%);
     width: 12em;
   }
-  .container__buttonOnSiteChallenge,
-  .container__buttonOnSiteChallengeTwo {
+  .content__buttonOnSiteChallenge,
+  .content__buttonOnSiteChallengeTwo {
     border: none;
     background-color: #8acfe5;
     border-radius: 0.2em;
@@ -185,55 +295,54 @@ body {
     transform: translateY(-55%);
     width: 12em;
   }
-  .container__quotes {
+  .content__quotes {
     display: flex;
     flex-direction: row;
   }
-  .container__quote {
+  .content__quote {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 2em;
     width: 100%;
   }
-  .container__quoteTextEnd,
-  .container__quoteTextEnd {
+  .content__quoteTextEnd {
     display: flex;
     flex-direction: column;
     width: 17em;
   }
-  .container__quoteImg {
+  .content__quoteImg {
     height: 5em;
     margin-left: -4em;
   }
-  .container__quoteText,
-  .container__quoteTextSecond {
+  .content__quoteText,
+  .content__quoteTextSecond {
     font-style: italic;
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 0.2em;
   }
-  .container__quoteEnd,
-  .container__quoteEndSecond {
+  .content__quoteEnd,
+  .content__quoteEndSecond {
     margin-top: 0;
     font-size: 0.8em;
   }
-  .container__quoteSecond {
+  .content__quoteSecond {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 2em;
     width: 100%;
   }
-  .container__quoteTextSecond {
+  .content__quoteTextSecond {
     font-style: italic;
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 0.2em;
   }
-  .container__quoteImgSecond {
+  .content__quoteImgSecond {
     height: 5em;
   }
 }
