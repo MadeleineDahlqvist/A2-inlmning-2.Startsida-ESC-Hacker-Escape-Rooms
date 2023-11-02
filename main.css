@@ -30,17 +30,19 @@ body {
   font-weight: bold;
   border: none;
 }
-.content__challenges{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.content__challengesTitle{
+  text-align: center;
+  font-weight: 400;
 }
 .content__challengesBox{
   display: flex;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.26);
   overflow: hidden;
-  border-radius: 8px; 
-  width: 20em;
+  width: 18em;
+  flex-shrink: 0;
+  border-radius: 8px;
+  margin-left: 1em;
+  margin-right: 1em;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -178,6 +180,13 @@ body {
   }
   .content__challenges{
     margin-bottom:1em;
+    overflow-x: scroll;
+  }
+  .content__challengesBoxContainer {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 1em;
   }
   .content__story{
     display: flex;
