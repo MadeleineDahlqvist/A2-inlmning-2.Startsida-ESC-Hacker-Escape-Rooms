@@ -1,3 +1,4 @@
+/* CSS for both mobile and web */
 * {
   font-family: "Roboto";
 }
@@ -96,8 +97,10 @@ body {
 }
 .content__storyButton {
   background-color: #011827;
+  border: solid;
   border-color: #8acfe5;
   border-radius: 0.2em;
+  border-width: 0.1em;
   color: #8acfe5;
   font-size: 0.9em;
   font-weight: bold;
@@ -130,7 +133,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .footer__link {
   color: #ffffff;
   text-decoration: none;
@@ -138,6 +140,7 @@ body {
 .footer__link--space {
   margin-bottom: 2em;
 }
+/* Media querie for moible and tablet */
 @media only screen and (max-width: 1034px) {
   .header {
     height: 6.4em;
@@ -232,12 +235,10 @@ body {
     padding-bottom: 2em;
     padding-top: 3em;
   }
-
   .content__storyText {
     padding-left: 1em;
     padding-right: 1em;
   }
-
   .content__playContainer {
     margin-left: 1em;
     margin-right: 1em;
@@ -248,7 +249,6 @@ body {
   .content__playImgWeb {
     display: none;
   }
-
   .footer {
     display: flex;
     flex-direction: column;
@@ -258,6 +258,7 @@ body {
     padding-top: 2em;
   }
 }
+/* Media querie for web */
 @media only screen and (min-width: 1035px) {
   .header {
     height: 12em;
@@ -370,8 +371,9 @@ body {
     justify-content: center;
     margin-bottom: 4em;
   }
-  .content__challengesParticipants {
-    margin-left: 9.1em;
+  .content__starsParticipants {
+    display: flex;
+    justify-content: space-between;
   }
   .content__story {
     margin-top: 4em;
