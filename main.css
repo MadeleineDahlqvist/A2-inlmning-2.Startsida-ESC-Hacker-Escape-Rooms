@@ -14,21 +14,21 @@ body {
   background-color: #011827;
   color: #ffffff;
   font-size: 20px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-weight: bold;
 }
 .header__logoImg {
-  width: 128px;
   height: 82px;
+  width: 128px;
 }
 .content__button--red {
   background-color: #e3170a;
+  border: none;
   border-radius: 0.2em;
   color: #ffffff;
   font-weight: bold;
-  border: none;
 }
 .content__challengesTitle {
   text-align: center;
@@ -36,29 +36,29 @@ body {
 }
 .content__challengesBox {
   display: flex;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.26);
-  overflow: hidden;
-  width: 18em;
+  flex-direction: column;
   flex-shrink: 0;
+  justify-content: flex-start;
   border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.26);
   margin-left: 1em;
   margin-right: 1em;
-  flex-direction: column;
-  justify-content: flex-start;
+  overflow: hidden;
+  width: 20em;
 }
 .content__room {
   padding: 1em;
   padding-bottom: 0;
 }
 .content__roomTitle {
-  margin: 0;
   font-weight: 100;
+  margin: 0;
 }
 .content__challengesParticipants {
+  font-size: 0.7em;
   margin: 0;
   margin-left: 0.8em;
   margin-top: 0.3em;
-  font-size: 0.7em;
 }
 .content__challengesBoxImg {
   width: 100%;
@@ -76,20 +76,19 @@ body {
   justify-content: flex-end;
 }
 .content__challengesBookButton {
-  padding: 0.7em;
-  width: 11em;
   margin: 1em;
   margin-top: 0;
+  padding: 0.7em;
+  width: 11em;
 }
 .content__playImg {
   width: 100%;
 }
-
 .content__story {
+  background-color: #011827;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #011827;
 }
 .content__storyText {
   color: #ffffff;
@@ -97,24 +96,24 @@ body {
 }
 .content__storyButton {
   background-color: #011827;
+  border-color: #8acfe5;
+  border-radius: 0.2em;
   color: #8acfe5;
-  padding: 0.8em;
-  margin: 0.2em;
   font-size: 0.9em;
   font-weight: bold;
-  border-radius: 0.2em;
-  border-color: #8acfe5;
-  width: 15em;
-  margin-top: 1.5em;
+  margin: 0.2em;
   margin-bottom: 1.2em;
+  margin-top: 1.5em;
+  padding: 0.8em;
+  width: 15em;
 }
 .content__playButton {
-  padding: 0.7em;
-  margin: 0.2em;
   font-size: 1em;
-  width: 12em;
-  margin-top: 1em;
+  margin: 0.2em;
   margin-bottom: 2em;
+  margin-top: 1em;
+  padding: 0.7em;
+  width: 12em;
 }
 .footer {
   background-color: #011827;
@@ -133,25 +132,25 @@ body {
 }
 
 .footer__link {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 .footer__link--space {
   margin-bottom: 2em;
 }
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 1034px) {
   .header {
     height: 6.4em;
   }
   .header__title {
     font-size: 1em;
     max-width: 70px;
-    margin-top: 1.3em;
     margin-left: 0.5em;
+    margin-top: 1.3em;
   }
   .header__logoImg {
-    margin-top: 1em;
     margin-left: 1em;
+    margin-top: 1em;
   }
   .header__navigationLinks {
     display: none;
@@ -171,16 +170,16 @@ body {
   .content__buttonOnSiteChallenge,
   .content__buttonOnSiteChallengeTwo {
     background-color: #8acfe5;
-    color: #011827;
     border: none;
-    padding: 0.7em;
-    margin: 0.2em;
+    border-radius: 0.2em;
+    color: #011827;
     font-size: 1em;
     font-weight: bold;
-    border-radius: 0.2em;
-    width: 12em;
-    margin-top: 1.5em;
+    margin: 0.2em;
     margin-bottom: 1.2em;
+    margin-top: 1.5em;
+    padding: 0.7em;
+    width: 12em;
   }
   .content__buttonOnlineChallenge,
   .content__buttonOnlineChallengeTwo {
@@ -192,8 +191,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 3em;
     margin-bottom: 3em;
+    margin-top: 3em;
     width: 100%;
   }
   .content__quoteTextEnd {
@@ -206,14 +205,14 @@ body {
     margin-right: 1em;
   }
   .content__quoteText {
-    font-style: italic;
     font-size: 1.2em;
-    margin-top: 0;
+    font-style: italic;
     margin-bottom: 0.2em;
+    margin-top: 0;
   }
   .content__quoteEnd {
-    margin-top: 0;
     font-size: 0.8em;
+    margin-top: 0;
   }
   .content__quoteSecond {
     display: none;
@@ -224,9 +223,9 @@ body {
   }
   .content__challengesBoxContainer {
     display: flex;
-    padding-top: 1em;
-    padding-bottom: 1em;
     margin-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
   }
   .content__story {
     margin-top: 3em;
@@ -253,38 +252,41 @@ body {
   .footer {
     display: flex;
     flex-direction: column;
+    padding-bottom: 4em;
     padding-left: 1.2em;
     padding-right: 1.2em;
     padding-top: 2em;
-    padding-bottom: 4em;
   }
 }
-@media only screen and (min-width: 941px) {
+@media only screen and (min-width: 1035px) {
   .header {
-    height: 9.5em;
+    height: 12em;
   }
   .header__title {
-    font-size: 1.4em;
-    margin-top: 2.3em;
+    font-size: 2em;
     margin-left: 0.5em;
+    margin-top: 2em;
   }
   .header__logoImg {
-    margin-top: 1em;
-    margin-left: 1em;
+    height: 5.5em;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    width: 8em;
   }
   .header__navigationLinks {
     background-color: #011827;
     display: flex;
     flex-direction: row;
+    font-size: 0.9em;
     justify-content: center;
-    font-size: 1em;
     margin-top: 2.1em;
   }
   .navigationLinks__link {
-    text-decoration: none;
     color: #ffffff;
-    margin-left: 2em;
-    margin-right: 2em;
+    font-size: 1.2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-decoration: none;
   }
   .navigationLinks__link:hover {
     color: #8acfe5;
@@ -304,8 +306,8 @@ body {
   }
   .content__buttonOnlineChallenge,
   .content__buttonOnlineChallengeTwo {
-    padding: 0.8em;
     font-size: 1.3em;
+    padding: 0.8em;
     width: 13em;
   }
   .content__buttonOnlineChallenge,
@@ -314,13 +316,13 @@ body {
   }
   .content__buttonOnSiteChallenge,
   .content__buttonOnSiteChallengeTwo {
-    border: none;
     background-color: #8acfe5;
+    border: none;
     border-radius: 0.2em;
     color: #011827;
-    padding: 0.8em;
     font-size: 1.3em;
     font-weight: bold;
+    padding: 0.8em;
     width: 12em;
   }
   .content__quotes {
@@ -350,15 +352,17 @@ body {
   .content__quoteText {
     font-style: italic;
     font-size: 1.3em;
-    margin-top: 0;
     margin-bottom: 0.2em;
+    margin-top: 0;
   }
   .content__quoteEnd {
-    margin-top: 0.5em;
     font-size: 0.8em;
+    margin-top: 0.5em;
   }
   .content__challengesTitle {
     font-size: 2em;
+    margin-bottom: 2em;
+    margin-top: 2.5em;
   }
   .content__challengesBoxContainer {
     display: flex;
@@ -371,12 +375,16 @@ body {
   }
   .content__story {
     margin-top: 4em;
-    padding-top: 4em;
     padding-bottom: 4.5em;
+    padding-top: 4em;
   }
   .content__storyText {
-    width: 22em;
     font-size: 1.5em;
+    width: 22em;
+  }
+  .content__storyButton {
+    font-size: 1em;
+    width: 15em;
   }
   .content__playBook {
     display: flex;
@@ -387,13 +395,13 @@ body {
     flex-direction: row-reverse;
   }
   .content__playContainer {
-    width: 50vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 6em;
     padding-right: 6em;
+    width: 50vw;
   }
   .content__playTitle {
     font-size: 1.7em;
@@ -401,36 +409,36 @@ body {
   }
   .content__playText {
     font-size: 1.2em;
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
   }
   .content__playImg {
     display: none;
   }
   .content__playImgWeb {
-    width: 50vw;
+    width: 50%;
   }
   .footer {
-    margin-top: 10em;
-    padding-top: 8em;
-    padding-bottom: 10em;
-    padding-left: 6em;
-    padding-right: 8em;
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
+    margin-top: 10em;
+    padding-bottom: 10em;
+    padding-left: 6em;
+    padding-right: 8em;
+    padding-top: 8em;
   }
   .footer__story {
-    
+    width: 50%;
   }
   .footer__siteMap {
-    padding-left: 12em;
-    width: 10em;
     flex-shrink: 0;
+    padding-left: 10em;
+    width: 10em;
   }
   .footer__socialMedia {
-    width: 10em;
-    padding-left: 2em;
     flex-shrink: 0;
+    padding-left: 2em;
+    width: 10em;
   }
 }
