@@ -10,6 +10,7 @@ body {
 }
 .header__logoTitle {
   display: flex;
+  position: relative;
 }
 .header {
   background-color: #011827;
@@ -142,6 +143,21 @@ body {
 }
 /* Media query for mobile and tablet */
 @media only screen and (max-width: 1034px) {
+  .body--overflow{
+    overflow: hidden;
+  }
+  .mobileNav__background--open{
+    background-color: #FFFFFF80;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    animation: fadeIn 0.2s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
   .header {
     height: 6.7em;
     display: flex;
@@ -160,29 +176,71 @@ body {
   }
   .header__menuBtn {
     padding-right: 1.2em;
-    padding-top: 1.4em;
+    padding-top: 1.2em;
   }
   .header__menuBtnIcon {
     background-color: #ffffff;
     border-radius: 6px;
-    height: 7px;
+    height: 5px;
     margin: 8px 0;
-    width: 67px;
+    width: 50px;
   }
   .header__navigationLinks {
     display: none;
   }
-  .header__closeBtn{
-    width: 1em;
-    height: 1em;
+  .header__closeBtn {
+    height: 1.5em;
+    width: 1.5em;
   }
-  .header__navigationLinks--open{
+  .header__closeBtnWrapper {
+    display: flex;
+    justify-content: end;
+    padding-right: 0.7em;
+    padding-top: 0.7em;
+    margin-bottom: 4em;
+  }
+  .header__navigationLinks--open {
     background-color: #011827;
     color: #ffffff;
     display: flex;
-    height: 100%;
-    position: absolute;
-    width: 20em;
+    flex-direction: column;
+    height: 95%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 95%;
+    z-index: 3;
+    animation: fadeInSize 0.2s;
+  }
+  @keyframes fadeInSize {
+    0% {
+      opacity: 0;
+      height: 85%;
+      width: 85%;
+    }
+    80% {
+      opacity: 0;
+      height: 85%;
+      width: 85%;
+    }
+    100% {
+      opacity: 1;
+      height: 95%;
+      width: 95%;
+    }
+  }
+  .navigationLinks__linkWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navigationLinks__link {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2em;
   }
   .content__hackerImgWeb {
     display: none;
@@ -286,6 +344,9 @@ body {
 }
 /* Media query for web */
 @media only screen and (min-width: 1035px) {
+  .body--overflow{
+    overflow: visible;
+  }
   .header {
     height: 12em;
   }
@@ -302,7 +363,8 @@ body {
   }
   .header__menuBtn,
   .header__menuBtnIcon,
-  .header__closeBtn {
+  .header__closeBtn,
+  .mobileNav_background {
     display: none;
   }
   .header__navigationLinks {
