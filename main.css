@@ -189,15 +189,15 @@ body {
     display: none;
   }
   .header__closeBtn {
-    height: 1.5em;
-    width: 1.5em;
+    height: 2em;
+    width: 2em;
+    margin-bottom: 3.5em;
   }
   .header__closeBtnWrapper {
     display: flex;
     justify-content: end;
-    padding-right: 0.7em;
-    padding-top: 0.7em;
-    margin-bottom: 4em;
+    padding-right: 1.1em;
+    padding-top: 1em;
   }
   .header__navigationLinks--open {
     background-color: #011827;
